@@ -22,7 +22,7 @@ const firebaseConfig = {
       loadNotes(user.email); // Load notes for the logged-in user
       loadAssignedTasks(user.email); // Load assigned tasks for the logged-in user
     } else {
-      window.location.href = "login.html"; // Redirect to login page if not logged in
+      window.location.href = "index.html"; // Redirect to login page if not logged in
     }
   });
   
@@ -109,7 +109,7 @@ const firebaseConfig = {
   // Logout function
   document.getElementById('logout').addEventListener('click', () => {
     auth.signOut().then(() => {
-      window.location.href = "login.html"; // Redirect to login page
+      window.location.href = "home.html"; // Redirect to login page
     });
   });
   

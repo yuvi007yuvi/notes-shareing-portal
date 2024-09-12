@@ -21,7 +21,7 @@ document.getElementById('login').addEventListener('click', () => {
 
   auth.signInWithEmailAndPassword(email, password)
     .then((userCredential) => {
-      window.location.href = "index.html"; // Redirect to main page after successful login
+      window.location.href = "home.html"; // Redirect to main page after successful login
     })
     .catch((error) => {
       document.getElementById('error-message').textContent = error.message;
@@ -34,7 +34,7 @@ document.getElementById('google-login').addEventListener('click', () => {
 
   auth.signInWithPopup(provider)
     .then((result) => {
-      window.location.href = "index.html"; // Redirect to main page after successful login
+      window.location.href = "home.html"; // Redirect to main page after successful login
     })
     .catch((error) => {
       document.getElementById('error-message').textContent = error.message;

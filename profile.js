@@ -21,7 +21,7 @@ auth.onAuthStateChanged((user) => {
         document.getElementById('user-info').innerText = `Logged in as: ${user.email}`;
         loadUserProfile(user.uid);
     } else {
-        window.location.href = "login.html"; // Redirect to login page
+        window.location.href = "index.html"; // Redirect to login page
     }
 });
 
