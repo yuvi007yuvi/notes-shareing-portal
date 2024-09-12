@@ -1,0 +1,59 @@
+body {
+    /* background-color: #f0f0f0; */
+  }
+  
+  .card note {
+    padding: 10px;
+    border-radius: 5px;
+    /* box-shadow:  4px 4px rgba(244, 240, 5, 0.962); */
+    position: relative;
+    transition: transform 0.6s;
+  }
+  
+  .card note:hover {
+    transform: scale(1.05);
+  }
+  
+  textarea {
+    border: 2px solid #007bff;
+    border-radius: 5px;
+  }
+  
+  textarea:focus {
+    border-color: #0056b3;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+  }
+  .navbar {
+    margin-bottom: 60px; /* Space between navbar and main content */
+    align-items: center;
+}
+
+.navbar img {
+    height: 55px; /* Adjust logo height */
+    width: auto;
+    
+    
+}
+#sidebar-wrapper {
+  width: 300px; /* Width of the sidebar */
+  transition: margin 0.3s ease; /* Smooth transition for sliding */
+  margin-left: 0; /* Default position */
+}
+
+#wrapper.toggled #sidebar-wrapper {
+  margin-left: -250px; /* Move sidebar out of view */
+  
+}
+#wrapper{
+  margin-left: 0%;
+}
+
+#page-content-wrapper {
+  width: 100%; /* Full width for page content */
+}
+
+/* Optional: Add some styling for the body */
+body {
+  overflow-x: hidden; /* Prevent horizontal scrollbar */
+}
+
